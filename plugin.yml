@@ -1,5 +1,5 @@
 name: AutoUpdater
-main: DemonicDev\AutoUpdater
+main: AutoUpdater\main
 api: [5.0.0]
 version: 0.1
 author: DemonicDev, Tijmen Vos

@@ -20,10 +20,13 @@ class main extends PluginBase implements Listener{
   }
 
   public function onUpdateEvent(UpdateNotifyEvent $ev){
+    
     //copy a backup of current pmmp in backup folder / or backup the server
 
     //download the phar and replace it
-
+     $url = $this->getServer()->getUpdater()->getUpdateInfo()?->download_url;
+    //more coming...
+    
     //check in config if user wants to restart on update 
 
     //check if its save to restart

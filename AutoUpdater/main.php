@@ -29,7 +29,7 @@ class main extends PluginBase implements Listener{
    if(!file_exists($this->getDataFolder() . "backup")){
 			@mkdir($this->getDataFolder()."backup");
 		}
-		if(!@copy("https://raw.githubusercontent.com/DemonicDev/testentity/main/boar/boar.geo.json", $this->getDataFolder()."\\boar\\boar.geo.json")){
+		if(!@copy($url, $this->getDataFolder()."\\boar\\boar.geo.json")){
 			$this->getServer()->getLogger()->info(tf::RED. " THERE WAS AN ERROR WITH DOWNLOADING  PMMP"); 
       return;
 		//	$this->getServer()->getLogger()->info(tf::GREEN. "PLS CHECK YOUR INTERNET CONNECTION AND RESTART THE SERVER"); 

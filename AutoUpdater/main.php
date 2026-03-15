@@ -25,6 +25,16 @@ class main extends PluginBase implements Listener{
 
     //download the phar and replace it
      $url = $this->getServer()->getUpdater()->getUpdateInfo()?->download_url;
+  /**
+   if(!file_exists($this->getDataFolder() . "backup")){
+			@mkdir($this->getDataFolder()."backup");
+		}
+		if(!@copy("https://raw.githubusercontent.com/DemonicDev/testentity/main/boar/boar.geo.json", $this->getDataFolder()."\\boar\\boar.geo.json")){
+			$this->getServer()->getLogger()->info(tf::RED. " THERE WAS AN ERROR WITH DOWNLOADING  PMMP"); 
+      return;
+		//	$this->getServer()->getLogger()->info(tf::GREEN. "PLS CHECK YOUR INTERNET CONNECTION AND RESTART THE SERVER"); 
+		}
+    */
     //more coming...
     
     //check in config if user wants to restart on update 
